@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8" />
+    <title>Sanjay Dantani</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Sanjay Dantani" />
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    
+    <link rel="manifest" href="site.webmanifest" />
+    <style>
+      .container1 {
+        position: relative;
+        width: 100%;
+        height: 200px;
+      }
+
+      .letter {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .letter:nth-child(1) {
+        left: 0;
+        animation: moveLeftRight 13s linear infinite;
+      }
+
+      .letter:nth-child(2) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: moveUpDown 14s linear infinite;
+      }
+
+      .letter:nth-child(3) {
+        right: 0;
+        animation: moveRightLeft 15s linear infinite;
+      }
+
+      @keyframes moveLeftRight {
+        0% {
+          left: 0;
+        }
+        50% {
+          left: calc(100% - 50px);
+        }
+        100% {
+          left: 0;
+        }
+      }
+
+      @keyframes moveUpDown {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: calc(100% - 50px);
+        }
+        100% {
+          top: 0;
+        }
+      }
+
+      @keyframes moveRightLeft {
+        0% {
+          right: 0;
+        }
+        50% {
+          right: calc(100% - 50px);
+        }
+        100% {
+          right: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body id="top" class="ss-preload">
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+      <div class="row s-header__nav-wrap">
+        <nav class="s-header__nav">
+          <ul>
+            <li class="current">
+              <a class="smoothscroll" href="#hero">Home</a>
+            </li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li>
+              <a class="smoothscroll" href="#testimonials">Quotes</a>
+            </li>
+            <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end row -->
+
+      <a class="s-header__menu-toggle" href="#0" title="Menu">
+        <span class="s-header__menu-icon"></span>
+      </a>
+    </header>
+    <!-- end s-header -->
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+      <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+      <div class="row s-hero__content">
+        <div class="column">
+          <div class="s-hero__content-about">
+            <h1>I'm Sanjay Dantani.</h1>
+
+            <h3>
+              I am a dedicated and motivated <span>Web Developer</span> with a
+              genuine passion for crafting exceptional digital experiences. I am
+              driven by a relentless desire to create
+              <span>innovative solutions.</span><br />
+              <a class="smoothscroll" href="#about">start scrolling</a> and
+              learn more <a class="smoothscroll" href="#about">about me</a>.
+            </h3>
+
+            <div class="s-hero__content-social">
+              <a href="https://github.com/Sanjay7021"
+                ><i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+              <a href="twiter.com"
+                ><i class="fab fa-twitter" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://instagram.com/mr_dantani_?igshid=MzNlNGNkZWQ4Mg=="
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sanjay-dantani-0b1032230"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <!-- end s-hero__content-about -->
+        </div>
+      </div>
+      <!-- s-hero__content -->
+
+      <div class="s-hero__scroll">
+        <a href="#about" class="s-hero__scroll-link smoothscroll">
+          <span class="scroll-arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1); transform: ; -ms-filter: "
+            >
+              <path
+                d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"
+              ></path>
+            </svg>
+          </span>
+          <span class="scroll-text">Scroll Down</span>
+        </a>
+      </div>
+      <!-- s-hero__scroll -->
+    </section>
+    <!-- end s-hero -->
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+      <div class="row">
+        <div class="column large-3 tab-12">
+          <img
+            class="s-about__pic"
+            src="images/avatars/ssd_edited.jpg"
+            alt=""
+          />
+        </div>
+        <div class="column large-9 tab-12 s-about__content">
+          <h3>About Me</h3>
+          <p style="text-align: justify">
+            I am currently pursuing my education at LDCE (L.D. College of
+            Engineering). LDCE is renowned for its academic excellence and
+            commitment to fostering innovation in the field of engineering. As a
+            student at LDCE, I have had the privilege of being part of a vibrant
+            and intellectually stimulating environment that encourages holistic
+            development. I am proud to mention that I have maintained a CGPA of
+            8.57 throughout my academic journey at LDCE, a testament to my
+            dedication and passion for learning. Known for my attention to
+            detail and problem-solving abilities, I thrive in challenging
+            environments and embrace the opportunity to continuously learn and
+            grow. I am committed to working diligently to deliver high-quality
+            projects, and my goal is to make a lasting impact through my work.
+          </p>
+          <hr />
+
+          <div class="row s-about__content-bottom">
+            <div class="column w-1000-stack">
+              <h3>Contact Details</h3>
+
+              <p>
+                Sanjay Dantani <br />
+                34/293 Bhadreshwar Housing Soc. <br />
+                Hansol ahmedabad 382475 <br />
+                <a href="tel:+8866102936">8866102936</a> <br />
+                <a href="mailto:#0">sanjaydantani1010@gmail.com</a>
+              </p>
+            </div>
+            <div class="column w-1000-stack">
+              <a href="sanjay_resume.pdf" class="btn btn--download" download>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1); transform: ; -ms-filter: "
+                >
+                  <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                  <path
+                    d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"
+                  ></path>
+                </svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+    </section>
+    <!-- end s-about -->
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+      <!-- s-resume__section -->
+
+      <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+          <h3 class="section-header-allcaps">Education</h3>
+        </div>
+        <div class="column large-9 tab-12">
+          <div class="resume-block">
+            <div class="resume-block__header">
+              <h4 class="h3">L. D. College of Engineering</h4>
+              <p class="resume-block__header-meta">
+                <span>BE in Computer Engineering</span>
+                current: Sem-6
+                <span class="resume-block__header-date"> 2023 </span>
+              </p>
+            </div>
+
+            <p style="text-align: justify">
+              "I am currently pursuing my education at LDCE (L.D. College of
+              Engineering). LDCE is renowned for its academic excellence and
+              commitment to fostering innovation in the field of engineering. As
+              a student at LDCE, I have had the privilege of being part of a
+              vibrant and intellectually stimulating environment that encourages
+              holistic development. I am proud to mention that I have maintained
+              a CGPA of 8.57 throughout my academic journey at LDCE, a testament
+              to my dedication and passion for learning.
+            </p>
+          </div>
+          <div class="resume-block">
+            <div class="resume-block__header">
+              <h4 class="h3">Government Polytechnic Gandhinagar</h4>
+              <p class="resume-block__header-meta">
+                <span>Diploma in Computer Engineering</span>
+                <span class="resume-block__header-date"> 2021</span>
+              </p>
+            </div>
+
+            <p>Completed Diploma with 9.76 CGPA</p>
+          </div>
+          <!-- end resume-block -->
+
+          <div class="resume-block">
+            <div class="resume-block__header">
+              <h4 class="h3">SSVV Higher Secondry School</h4>
+              <p class="resume-block__header-meta">
+                <span>S.S.C</span>
+                <span class="resume-block__header-date"> 2018 </span>
+              </p>
+            </div>
+
+            <p>completed 10th with 79.31 percentile rank</p>
+          </div>
+          <!-- end resume-block -->
+        </div>
+      </div>
+      <!-- s-resume__section -->
+
+      <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+          <h3 class="section-header-allcaps">Skills</h3>
+        </div>
+        <div class="column large-9 tab-12">
+          <div class="resume-block">
+            <p></p>
+
+            <ul class="skill-bars-fat">
+              <li>
+                <div class="progress percent85"></div>
+                <strong>HTML</strong>
+              </li>
+              <li>
+                <div class="progress percent85"></div>
+                <strong>CSS</strong>
+              </li>
+              <li>
+                <div class="progress percent65"></div>
+                <strong>Javascript</strong>
+              </li>
+              <li>
+                <div class="progress percent90"></div>
+                <strong>Figma</strong>
+              </li>
+              <li>
+                <div class="progress percent65"></div>
+                <strong>SQL</strong>
+              </li>
+              <li>
+                <div class="progress percent75"></div>
+                <strong>PHP</strong>
+              </li>
+              <li>
+                <div class="progress percent55"></div>
+                <strong>Python and Flask</strong>
+              </li>
+              <li>
+                <div class="progress percent65"></div>
+                <strong>Basics of C, C++, Java</strong>
+              </li>
+            </ul>
+          </div>
+          <!-- end resume-block -->
+        </div>
+      </div>
+      <!-- s-resume__section -->
+    </section>
+    <!-- end s-resume -->
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+      <div class="row s-portfolio__header">
+        <div class="column large-12">
+          <h3>A Few Of My Latest Creations</h3>
+        </div>
+      </div>
+
+      <div
+        class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list"
+      >
+        <div class="column folio-item">
+          <a href="#modal-01" class="folio-item__thumb" style="margin: 4px">
+            <img
+              src="images/portfolio/osbs-.jpg"
+              srcset="
+                images/portfolio/osbs-.jpg 1x,
+                images/portfolio/osbs-.jpg 2x
+              "
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- end folio-item -->
+
+        <div class="column folio-item">
+          <a href="#modal-02" class="folio-item__thumb" style="margin: 4px">
+            <img
+              src="images/portfolio/smart-career.jpg"
+              srcset="
+                images/portfolio/smart-career.jpg  1x,
+                images/portfolio/smart-career.jpgg 2x
+              "
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- end folio-item -->
+
+        <div class="column folio-item">
+          <a href="#modal-03" class="folio-item__thumb" style="margin: 4px">
+            <img
+              src="images/portfolio/forkify.jpg"
+              srcset="
+                images/portfolio/forkify.jpg 1x,
+                images/portfolio/forkify.jpg 2x
+              "
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- end folio-item -->
+
+        <div class="column folio-item">
+          <a href="#modal-04" class="folio-item__thumb" style="margin: 4px">
+            <img
+              src="images/portfolio/mapty.jpg"
+              srcset="
+                images/portfolio/mapty.jpg 1x,
+                images/portfolio/mapty.jpg 2x
+              "
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- end folio-item -->
+
+        <div class="column folio-item">
+          <a href="#modal-05" class="folio-item__thumb" style="margin: 4px">
+            <img
+              src="images/portfolio/Bankist.jpg"
+              srcset="
+                images/portfolio/Bankist.jpg 1x,
+                images/portfolio/Bankist.jpg 2x
+              "
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- end folio-item -->
+
+        <div class="column folio-item">
+          <a href="#modal-06" class="folio-item__thumb" style="margin: 4px">
+            <img
+              src="images/portfolio/pig-game.jpg"
+              srcset="
+                images/portfolio/pig-game.jpg 1x,
+                images/portfolio/pig-game.jpg 2x
+              "
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- end folio-item -->
+
+        <div class="column folio-item" style="margin: 4px">
+          <a href="#modal-07" class="folio-item__thumb">
+            <img
+              src="images/portfolio/guess.jpg"
+              srcset="
+                images/portfolio/guess.jpg 1x,
+                images/portfolio/guess.jpg 2x
+              "
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- end folio-item -->
+        <!-- end folio-item -->
+      </div>
+      <!-- end folio-list -->
+
+      <!-- Modal Templates Popup
+        =========================================================== -->
+      <div id="modal-01" hidden>
+        <div class="modal-popup">
+          <img src="images/portfolio/osbs.jpg" alt="" />
+
+          <div class="modal-popup__desc">
+            <h5>Online Second-hand Buying and Selling Book</h5>
+            <p style="text-align: justify">
+              Generally buying and selling Second-hand books from shop is time
+              consuming. User can buy second-hand books at more
+              appropriate/reasonable price. From this portal user can easily buy
+              and sell second-hand books without any intermediate option over
+              internet. User can buy books for rent.
+            </p>
+            <ul class="modal-popup__cat">
+              <li>PHP</li>
+              <li>MYSQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/Sanjay7021/online-buying-and-selling-book.git"
+            class="modal-popup__details"
+            >Github link</a
+          >
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <div id="modal-02" hidden>
+        <div class="modal-popup">
+          <img src="images/portfolio/smart-career-.jpg" alt="" />
+
+          <div class="modal-popup__desc">
+            <h5>Smart Career Guider</h5>
+            <p style="font-style: justify">
+              In this Project there are main three users (student,expert,admin).
+              Admin:- asign the courses.according courses EXPERT will higher by
+              admin. Expert:- Expert can assign material, quize and also
+              generate the report of students. Student:- student can start any
+              of the course. they assign themselves for perticular one course at
+              a time.
+            </p>
+            <ul class="modal-popup__cat">
+              <li>Pyhton</li>
+              <li>Flask Framework</li>
+              <li>HTML</li>
+              <li>JS</li>
+              <li>JSON</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <a
+            class="modal-popup__details"
+            href="https://github.com/Sanjay7021/Smart-Career-Guider---A-flask-project.git"
+            >Github link</a
+          >
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <div id="modal-03" hidden>
+        <div class="modal-popup">
+          <img src="images/portfolio/forkify-.jpg" alt="" />
+
+          <div class="modal-popup__desc">
+            <h5>forkify</h5>
+            <p>
+              Here user can search any of the recipe according their need. here
+              i used api called forkify API. which provided by udamy course.
+            </p>
+            <ul class="modal-popup__cat">
+              <li>JS</li>
+              <li>JSON</li>
+              <li>AJAX</li>
+              <li>HTML</li>
+              <li>CSS</li>
+
+              <li>
+                <a
+                  href="https://github.com/Sanjay7021/forkify-find-your-recipe.git"
+                  >Git Repo</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a
+            style="color: red"
+            href="https://forkifyssd.netlify.app/"
+            class="modal-popup__details"
+            >LIVE</a
+          ><br />
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <div id="modal-04" hidden>
+        <div class="modal-popup">
+          <img src="images/portfolio/mapty-.jpg" alt="" />
+
+          <div class="modal-popup__desc">
+            <h5>Mapty</h5>
+            <p style="text-align: justify">
+              This application used to show our tracking path. like todo app we
+              can create our task by left-side panel. we have to choose point
+              from map to decide the path. it recognizing your current location.
+            </p>
+            <ul class="modal-popup__cat">
+              <li>API</li>
+              <li>JS</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/Sanjay7021/Mapty-Running-Cycling-Track-on-map.git"
+            class="modal-popup__details"
+            >Project link</a
+          >
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <div id="modal-05" hidden>
+        <div class="modal-popup">
+          <img src="images/portfolio/Bankist-.jpg" alt="" />
+
+          <div class="modal-popup__desc">
+            <h5>Bankist Application</h5>
+            <p>
+              It is marketing type of about_us page. it IS created to learn some
+              advanced dom in js like lazy loading, tabbed view etc..
+            </p>
+            <ul class="modal-popup__cat">
+              <li>JS</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/Sanjay7021/Bankist-site-advanced-dom-manipulation.git"
+            class="modal-popup__details"
+            >Project link</a
+          >
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <div id="modal-06" hidden>
+        <div class="modal-popup">
+          <img src="images/portfolio/pig-game-.jpg" alt="" />
+
+          <div class="modal-popup__desc">
+            <h5>Pig Game</h5>
+            <p>Pig game: download from github and play</p>
+            <ul class="modal-popup__cat">
+              <li>JS</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/Sanjay7021/Pig-Game---js-project.git"
+            class="modal-popup__details"
+            >Project link</a
+          >
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <div id="modal-07" hidden>
+        <div class="modal-popup">
+          <img src="images/portfolio/guess-.jpg" alt="" />
+
+          <div class="modal-popup__desc">
+            <h5>Guess My Number</h5>
+            <p>
+              Gues number if you succeed. you will rewarded by points if not
+              then score will decremented
+            </p>
+            <ul class="modal-popup__cat">
+              <li>JS</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/Sanjay7021/Guess-My-Number-js-game.git"
+            class="modal-popup__details"
+            >Project link</a
+          >
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <!-- end modal -->
+    </section>
+    <!-- end s-portfolio -->
+
+    <!-- CTA
+    ================================================== -->
+
+    <!-- end s-cta -->
+
+    <!-- testimonials
+    ================================================== -->
+    <section id="testimonials" class="s-testimonials target-section">
+      <div class="s-testimonials__bg"></div>
+
+      <div class="row s-testimonials__header">
+        <div class="column large-12">
+          <h3>Hear What Legends Says</h3>
+        </div>
+      </div>
+
+      <div class="row s-testimonials__content">
+        <div class="column">
+          <div class="swiper-container testimonial-slider">
+            <div class="swiper-wrapper">
+              <div class="testimonial-slider__slide swiper-slide">
+                <div class="testimonial-slider__author">
+                  <cite class="testimonial-slider__cite">
+                    <strong>Mahatma Gandhiji</strong>
+                    <span>Bapu</span>
+                  </cite>
+                </div>
+                <p>
+                  “Be so busy improving yourself that you have no time to
+                  criticise others.”
+                </p>
+              </div>
+              <div class="testimonial-slider__slide swiper-slide">
+                <div class="testimonial-slider__author">
+                  <!-- <img
+                    src="images/avatars/user-02.jpg"
+                    alt="Author image"
+                    class="testimonial-slider__avatar"
+                  /> -->
+                  <cite class="testimonial-slider__cite" align="left">
+                    <strong>Nelson Mandela</strong>
+                    <!-- <span>CEO, Apple</span> -->
+                  </cite>
+                </div>
+                <p>
+                  "The greatest glory in living lies not in never falling, but
+                  in rising every time we fall."
+                </p>
+              </div>
+              <!-- end testimonial-slider__slide -->
+
+              <div class="testimonial-slider__slide swiper-slide">
+                <div class="testimonial-slider__author">
+                  <cite class="testimonial-slider__cite">
+                    <strong>Steve Jobs</strong>
+                    <span>CEO, Apple</span>
+                  </cite>
+                </div>
+                <p>
+                  "Your time is limited, so don't waste it living someone else's
+                  life. Don't be trapped by dogma – which is living with the
+                  results of other people's thinking."
+                </p>
+              </div>
+
+              <!-- end testimonial-slider__slide -->
+            </div>
+            <!-- end testimonial slider swiper-wrapper -->
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- end swiper-container -->
+        </div>
+        <!-- end column -->
+      </div>
+      <!-- end row -->
+    </section>
+    <!-- end s-testimonials -->
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+      <div class="row s-contact__header">
+        <div class="column large-12">
+          <h3 class="section-header-allcaps">Say Hello</h3>
+        </div>
+      </div>
+
+      <div class="row s-contact__content">
+        <div class="column large-7 medium-12">
+          <h4 class="huge-text">Contact Me :)</h4>
+        </div>
+
+        <div class="column large-4 medium-12">
+          <div class="row contact-infos">
+            <div class="column large-12 medium-6 tab-12">
+              <div class="contact-block">
+                <h5 class="contact-block__header">Email</h5>
+                <p class="contact-block__content">
+                  <a class="mailtoui" href="mailto:sanjaydantani1010@gmail.com"
+                    >sanjaydantani1010@gmail.com</a
+                  >
+                </p>
+              </div>
+              <!-- end contact-block -->
+            </div>
+            <div class="column large-12 medium-6 tab-12">
+              <div class="contact-block">
+                <h5 class="contact-block__header">Phone</h5>
+                <p class="contact-block__content">
+                  <a href="tel:+8866102936">8866102936</a>
+                </p>
+              </div>
+              <!-- end contact-block -->
+            </div>
+
+            <div class="column large-12">
+              <a
+                href="mailto:sanjaydantani1010@gamil.com"
+                class="mailtoui btn btn--primary h-full-width"
+                >Let's Talk</a
+              >
+            </div>
+          </div>
+          <!-- end contact-infos -->
+        </div>
+      </div>
+      <!-- s-contact__content -->
+    </section>
+    <!-- end s-contact -->
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+      <div class="row">
+        <div
+          class="column large-4 medium-6 w-1000-stack s-footer__social-block"
+        >
+          <ul class="s-footer__social">
+            <li>
+              <a href="https://github.com/Sanjay7021"
+                ><i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="twiter.com"
+                ><i class="fab fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/mr_dantani_?igshid=MzNlNGNkZWQ4Mg=="
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/sanjay-dantani-0b1032230"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+          <span>Design by SSD</span>
+        </div>
+      </div>
+
+      <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
+          </svg>
+        </a>
+      </div>
+      <!-- end ss-go-top -->
+    </footer>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
